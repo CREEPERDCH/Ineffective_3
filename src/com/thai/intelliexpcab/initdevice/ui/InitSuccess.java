@@ -75,6 +75,7 @@ public class InitSuccess extends JFrame {
         jButton3.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/sync.png"))); // NOI18N
         jButton3.addActionListener(evt -> {
             jTextField1.setText("正在同步设置，请稍候...");
+            jButton3.setEnabled(false);
             new Thread(() -> {
                 try {
                     Thread.sleep(2000);

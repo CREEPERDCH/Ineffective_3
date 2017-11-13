@@ -95,9 +95,12 @@ public class SyncSuccess extends JFrame {
         jButton3.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/uploadyes.png"))); // NOI18N
         jButton3.addActionListener(evt -> {
             jLabel2.setText("正在上传,请稍候...");
-            jButton1.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/updateadd_gray.png")));
-            jButton2.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/updatediv_gray.png")));
-            jButton3.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/upload_tray.png")));
+            jButton1.setEnabled(false);
+            jButton2.setEnabled(false);
+            jButton3.setEnabled(false);
+//            jButton1.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/updateadd_gray.png")));
+//            jButton2.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/updatediv_gray.png")));
+//            jButton3.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/upload_tray.png")));
             jLabel4.setForeground(new Color(99, 99, 99));
             jLabel12.setForeground(new Color(99, 99, 99));
             jLabel6.setForeground(new Color(99, 99, 99));
@@ -116,9 +119,9 @@ public class SyncSuccess extends JFrame {
                         if (isTrue) {
                             jLabel2.setText("上传成功!3秒后跳转到首页...");
                             jLabel1.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/success.png")));
-                            jButton1.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/updateadd.png")));
-                            jButton2.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/updatediv.png")));
-                            jButton3.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/uploadyes.png")));
+//                            jButton1.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/updateadd.png")));
+//                            jButton2.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/updatediv.png")));
+//                            jButton3.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/uploadyes.png")));
                             jLabel4.setForeground(new Color(253, 145, 24));
                             jLabel12.setForeground(new Color(253, 145, 24));
                             jLabel6.setForeground(new Color(253, 145, 24));
@@ -153,9 +156,12 @@ public class SyncSuccess extends JFrame {
         jButton1.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/updateadd.png"))); // NOI18N
         jButton1.addActionListener(evt -> {
             jLabel2.setText("正在更新地址,请稍候...");
-            jButton1.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/updateadd_gray.png")));
-            jButton2.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/updatediv_gray.png")));
-            jButton3.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/upload_tray.png")));
+            jButton1.setEnabled(false);
+            jButton2.setEnabled(false);
+            jButton3.setEnabled(false);
+//            jButton1.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/updateadd_gray.png")));
+//            jButton2.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/updatediv_gray.png")));
+//            jButton3.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/upload_tray.png")));
             new Thread(new Runnable() {
                 @Override
                 public void run() {
@@ -167,16 +173,22 @@ public class SyncSuccess extends JFrame {
                     boolean isTrue = new Random().nextBoolean();
                     if (isTrue) {
                         jLabel2.setText("更新地址成功!");
+                        jButton1.setEnabled(true);
+                        jButton2.setEnabled(true);
+                        jButton3.setEnabled(true);
                         jLabel1.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/success.png")));
-                        jButton1.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/updateadd.png")));
-                        jButton2.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/updatediv.png")));
-                        jButton3.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/uploadyes.png")));
+//                        jButton1.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/updateadd.png")));
+//                        jButton2.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/updatediv.png")));
+//                        jButton3.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/uploadyes.png")));
                     } else {
                         jLabel2.setText("更新地址失败!");
+                        jButton1.setEnabled(true);
+                        jButton2.setEnabled(true);
+                        jButton3.setEnabled(true);
                         jLabel1.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/fail.png")));
-                        jButton1.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/updateadd.png")));
-                        jButton2.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/updatediv.png")));
-                        jButton3.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/uploadyes.png")));
+//                        jButton1.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/updateadd.png")));
+//                        jButton2.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/updatediv.png")));
+//                        jButton3.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/uploadyes.png")));
                     }
                 }
             }).start();
@@ -186,9 +198,12 @@ public class SyncSuccess extends JFrame {
         jButton2.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/updatediv.png"))); // NOI18N
         jButton2.addActionListener(evt -> {
             jLabel2.setText("正在更新规格,请稍候...");
-            jButton1.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/updateadd_gray.png")));
-            jButton2.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/updatediv_gray.png")));
-            jButton3.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/upload_tray.png")));
+            jButton1.setEnabled(false);
+            jButton2.setEnabled(false);
+            jButton3.setEnabled(false);
+//            jButton1.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/updateadd_gray.png")));
+//            jButton2.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/updatediv_gray.png")));
+//            jButton3.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/upload_tray.png")));
             new Thread(new Runnable() {
                 @Override
                 public void run() {
@@ -200,16 +215,22 @@ public class SyncSuccess extends JFrame {
                     boolean isTrue = new Random().nextBoolean();
                     if (isTrue) {
                         jLabel2.setText("更新规格成功!");
+                        jButton1.setEnabled(true);
+                        jButton2.setEnabled(true);
+                        jButton3.setEnabled(true);
                         jLabel1.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/success.png")));
-                        jButton1.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/updateadd.png")));
-                        jButton2.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/updatediv.png")));
-                        jButton3.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/uploadyes.png")));
+//                        jButton1.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/updateadd.png")));
+//                        jButton2.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/updatediv.png")));
+//                        jButton3.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/uploadyes.png")));
                     } else {
                         jLabel2.setText("更新规格失败!");
+                        jButton1.setEnabled(true);
+                        jButton2.setEnabled(true);
+                        jButton3.setEnabled(true);
                         jLabel1.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/fail.png")));
-                        jButton1.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/updateadd.png")));
-                        jButton2.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/updatediv.png")));
-                        jButton3.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/uploadyes.png")));
+//                        jButton1.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/updateadd.png")));
+//                        jButton2.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/updatediv.png")));
+//                        jButton3.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/uploadyes.png")));
                     }
                 }
             }).start();
