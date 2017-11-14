@@ -1,7 +1,15 @@
 package com.thai.intelliexpcab.initdevice.ui;
 
+import com.thai.intelliexpcab.bean.admin.AdminBean;
+import com.thai.intelliexpcab.http.HttpConsf;
+import com.thai.intelliexpcab.maingui.ui.MainPageUI;
+import com.thai.intelliexpcab.utils.HttpUtil;
+import com.thai.intelliexpcab.utils.JsonUtils;
+
 import javax.swing.*;
 import java.awt.*;
+import java.util.HashMap;
+import java.util.Map;
 
 public class InitStart extends JFrame {
 
@@ -43,8 +51,14 @@ public class InitStart extends JFrame {
         jPanel1.setBackground(new Color(255, 255, 255));
         jLabel1.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/init_1.png")));
         jButton1.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/init_2.png"))); // NOI18N
+        //初始化柜机获得编号
         jButton1.addActionListener(evt -> {
-            new InitWaitNum().setVisible(true);
+            Map<String, String> map = new HashMap<>();
+            map.put("deliveryNo", "000000");
+            String json = HttpUtil.get(HttpConsf.INIT_DEL, map);
+            AdminBean adminBean = JsonUtils.changeGson2Bean(json, AdminBean.class);
+            String delNumber = adminBean.getData().getDeliveryNo();
+            new InitWaitNum(delNumber).setVisible(true);
             InitStart.this.dispose();
         });
         jLabel2.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/init_3.png"))); // NOI18N

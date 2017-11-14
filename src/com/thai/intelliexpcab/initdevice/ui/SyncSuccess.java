@@ -1,11 +1,13 @@
 package com.thai.intelliexpcab.initdevice.ui;
 
+import com.thai.intelliexpcab.bean.admin.AdminQueryBean;
 import com.thai.intelliexpcab.maingui.ui.MainPageUI;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Objects;
 import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -36,15 +38,17 @@ public class SyncSuccess extends JFrame {
     private JSeparator jSeparator5;
     private JSeparator jSeparator6;
     private JSeparator jSeparator7;
+    private MainPageUI mainPageUI;
 
-    public SyncSuccess() {
+    public SyncSuccess(AdminQueryBean adminQueryBean) {
         this.setUndecorated(true);
 //        this.setExtendedState(JFrame.MAXIMIZED_BOTH);
         this.requestFocus();
         this.setAlwaysOnTop(true);
         this.setResizable(false);
         this.setLocation(0, 0);
-        initComponents();
+        mainPageUI = new MainPageUI();
+        initComponents(adminQueryBean);
     }
 
     public static void main(String[] args) {
@@ -58,10 +62,10 @@ public class SyncSuccess extends JFrame {
                 break;
             }
         }
-        EventQueue.invokeLater(() -> new SyncSuccess().setVisible(true));
+        EventQueue.invokeLater(() -> new SyncSuccess(null).setVisible(true));
     }
 
-    private void initComponents() {
+    private void initComponents(AdminQueryBean adminQueryBean) {
         jPanel1 = new JPanel();
         jLabel1 = new JLabel();
         jLabel2 = new JLabel();
@@ -150,7 +154,9 @@ public class SyncSuccess extends JFrame {
         jLabel4.setFont(new Font("微软雅黑", Font.PLAIN, 24)); // NOI18N
         jLabel4.setText("柜机编号:");
         jLabel12.setFont(new Font("微软雅黑", Font.PLAIN, 24)); // NOI18N
-        jLabel12.setText("01022228889");
+
+        //获得柜机编号
+        jLabel12.setText(adminQueryBean.getData().getDeliveryNo() + "");
         jLabel6.setFont(new Font("微软雅黑", Font.PLAIN, 24)); // NOI18N
         jLabel6.setText("柜机地址:");
         jButton1.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/updateadd.png"))); // NOI18N
@@ -170,26 +176,26 @@ public class SyncSuccess extends JFrame {
                     } catch (InterruptedException ex) {
                         Logger.getLogger(SyncSuccess.class.getName()).log(Level.SEVERE, null, ex);
                     }
-                    boolean isTrue = new Random().nextBoolean();
-                    if (isTrue) {
+                    mainPageUI.jLabel2.setText(adminQueryBean.getData().getDeliveryRegion() + " " + adminQueryBean.getData().getDeliverySchool());
+
+                    if (mainPageUI.jLabel2.getText() != null) {
                         jLabel2.setText("更新地址成功!");
-                        jButton1.setEnabled(true);
-                        jButton2.setEnabled(true);
-                        jButton3.setEnabled(true);
                         jLabel1.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/success.png")));
+                        // 获得柜机地区
+                        jLabel11.setText(adminQueryBean.getData().getDeliveryRegion());
 //                        jButton1.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/updateadd.png")));
 //                        jButton2.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/updatediv.png")));
 //                        jButton3.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/uploadyes.png")));
                     } else {
                         jLabel2.setText("更新地址失败!");
-                        jButton1.setEnabled(true);
-                        jButton2.setEnabled(true);
-                        jButton3.setEnabled(true);
                         jLabel1.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/fail.png")));
 //                        jButton1.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/updateadd.png")));
 //                        jButton2.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/updatediv.png")));
 //                        jButton3.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/uploadyes.png")));
                     }
+                    jButton1.setEnabled(true);
+                    jButton2.setEnabled(true);
+                    jButton3.setEnabled(true);
                 }
             }).start();
         });
@@ -215,41 +221,48 @@ public class SyncSuccess extends JFrame {
                     boolean isTrue = new Random().nextBoolean();
                     if (isTrue) {
                         jLabel2.setText("更新规格成功!");
-                        jButton1.setEnabled(true);
-                        jButton2.setEnabled(true);
-                        jButton3.setEnabled(true);
                         jLabel1.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/success.png")));
 //                        jButton1.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/updateadd.png")));
 //                        jButton2.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/updatediv.png")));
 //                        jButton3.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/uploadyes.png")));
                     } else {
                         jLabel2.setText("更新规格失败!");
-                        jButton1.setEnabled(true);
-                        jButton2.setEnabled(true);
-                        jButton3.setEnabled(true);
                         jLabel1.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/fail.png")));
 //                        jButton1.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/updateadd.png")));
 //                        jButton2.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/updatediv.png")));
 //                        jButton3.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/uploadyes.png")));
                     }
+                    jButton1.setEnabled(true);
+                    jButton2.setEnabled(true);
+                    jButton3.setEnabled(true);
                 }
             }).start();
         });
         jLabel11.setFont(new Font("微软雅黑", Font.PLAIN, 24)); // NOI18N
         jLabel11.setForeground(new Color(253, 145, 24));
-        jLabel11.setText("广东省  广州市  番禺区  小谷围镇");
+
+
+
         jLabel13.setFont(new Font("微软雅黑", Font.PLAIN, 24)); // NOI18N
         jLabel13.setForeground(new Color(253, 145, 24));
-        jLabel13.setText("广东工业大学");
+
+        //获得柜机学校
+        jLabel13.setText(adminQueryBean.getData().getDeliverySchool());
         jLabel14.setFont(new Font("微软雅黑", Font.PLAIN, 24)); // NOI18N
         jLabel14.setForeground(new Color(253, 145, 24));
-        jLabel14.setText("东区第二食堂一楼");
+
+        //地址三
+        jLabel14.setText("");
         jLabel15.setFont(new Font("微软雅黑", Font.PLAIN, 24)); // NOI18N
         jLabel15.setForeground(new Color(253, 145, 24));
-        jLabel15.setText("规格一");
+
+        //柜机规格
+        jLabel15.setText(adminQueryBean.getData().getDeliveryModel());
         jLabel16.setFont(new Font("微软雅黑", Font.PLAIN, 24)); // NOI18N
         jLabel16.setForeground(new Color(99, 99, 99));
-        jLabel16.setText("(10行3列30格)");
+
+        //行列柜数
+        jLabel16.setText("");
         GroupLayout jPanel1Layout = new GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(

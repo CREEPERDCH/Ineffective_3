@@ -1,10 +1,23 @@
 package com.thai.intelliexpcab.initdevice.ui;
 
+import com.thai.intelliexpcab.bean.admin.AdminQueryBean;
+import com.thai.intelliexpcab.bean.admin.SettingsBean;
+import com.thai.intelliexpcab.http.HttpConsf;
+import com.thai.intelliexpcab.maingui.ui.MainPageUI;
+import com.thai.intelliexpcab.utils.HttpUtil;
+import com.thai.intelliexpcab.utils.JsonUtils;
+
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 import java.awt.*;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -26,14 +39,14 @@ public class InitSuccess extends JFrame {
     private JPanel jPanel1;
     private JTextField jTextField1;
 
-    public InitSuccess() {
+    public InitSuccess(String delNumber) {
         this.setUndecorated(true);
 //        this.setExtendedState(JFrame.MAXIMIZED_BOTH);
         this.requestFocus();
         this.setAlwaysOnTop(true);
         this.setResizable(false);
         this.setLocation(0, 0);
-        initComponents();
+        initComponents(delNumber);
     }
 
     public static void main(String[] args) {
@@ -47,10 +60,10 @@ public class InitSuccess extends JFrame {
                 break;
             }
         }
-        EventQueue.invokeLater(() -> new InitSuccess().setVisible(true));
+        EventQueue.invokeLater(() -> new InitSuccess(null).setVisible(true));
     }
 
-    private void initComponents() {
+    private void initComponents(String delNumber) {
         jPanel1 = new JPanel();
         jLabel1 = new JLabel();
         jLabel2 = new JLabel();
@@ -71,7 +84,7 @@ public class InitSuccess extends JFrame {
         jLabel2.setFont(new Font("微软雅黑", Font.PLAIN, 24)); // NOI18N
         jLabel2.setText("柜机编号:");
         jLabel4.setFont(new Font("微软雅黑", Font.PLAIN, 24)); // NOI18N
-        jLabel4.setText("01022228889");
+        jLabel4.setText(delNumber);
         jButton3.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/sync.png"))); // NOI18N
         jButton3.addActionListener(evt -> {
             jTextField1.setText("正在同步设置，请稍候...");
@@ -82,13 +95,39 @@ public class InitSuccess extends JFrame {
                 } catch (InterruptedException ex) {
                     Logger.getLogger(InitSuccess.class.getName()).log(Level.SEVERE, null, ex);
                 }
-                boolean isSuccess = new Random().nextBoolean();
-                if (isSuccess) {
+                // 根据柜机编号请求同步数据
+                Map<String, String> params = new HashMap<>();
+                params.put("deliveryNo", "1");
+                String jsonString = HttpUtil.get(HttpConsf.QUERY_DEL_BY_NO, params);
+                AdminQueryBean adminQueryBean = JsonUtils.changeGson2Bean(jsonString, AdminQueryBean.class);
+
+                SettingsBean settingsBean = new SettingsBean();
+                if (adminQueryBean.getData() == null) {
+                    settingsBean.setStatus(0);
+                    settingsBean.setDeliveryNo("000000");
+                    settingsBean.setDeliveryRegion(null);
+                    settingsBean.setDeliverySchool(null);
+                    settingsBean.setDeliveryModel(null);
                     new SyncFail().setVisible(true);
-                    InitSuccess.this.dispose();
+                    this.dispose();
                 } else {
-                    new SyncSuccess().setVisible(true);
-                    InitSuccess.this.dispose();
+                    settingsBean.setStatus(1);
+                    settingsBean.setDeliveryNo(delNumber);
+                    settingsBean.setDeliveryRegion(adminQueryBean.getData().getDeliveryRegion());
+                    settingsBean.setDeliverySchool(adminQueryBean.getData().getDeliverySchool());
+                    settingsBean.setDeliveryModel(adminQueryBean.getData().getDeliveryModel());
+                    File file = new File("D:\\Settings.txt");
+                    if (!file.exists()) {
+                        try {
+                            file.createNewFile();
+                            ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream(file));
+                            objectOutputStream.writeObject(settingsBean);
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                    new MainPageUI().setVisible(true);
+                    this.dispose();
                 }
             }).start();
         });

@@ -2,17 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab7ca032-2374-4b92-a28f-4d48f5e2f3d9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IntelliExpressCabinet/com/thai/IntelliExpCab/maingui/ui/CustomPanel.class" afterPath="$PROJECT_DIR$/out/production/IntelliExpressCabinet/com/thai/IntelliExpCab/maingui/ui/CustomPanel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IntelliExpressCabinet/com/thai/IntelliExpCab/maingui/ui/LanguageUI.class" afterPath="$PROJECT_DIR$/out/production/IntelliExpressCabinet/com/thai/IntelliExpCab/maingui/ui/LanguageUI.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IntelliExpressCabinet/com/thai/IntelliExpCab/initdevice/ui/InitWaitNum$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IntelliExpressCabinet/com/thai/IntelliExpCab/initdevice/ui/InitWaitNum$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IntelliExpressCabinet/com/thai/IntelliExpCab/maingui/ui/CustomerUI$1.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IntelliExpressCabinet/Main.class" afterPath="$PROJECT_DIR$/out/production/IntelliExpressCabinet/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IntelliExpressCabinet/com/thai/IntelliExpCab/bean/admin/AdminBean.class" afterPath="$PROJECT_DIR$/out/production/IntelliExpressCabinet/com/thai/IntelliExpCab/bean/admin/AdminBean.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IntelliExpressCabinet/com/thai/IntelliExpCab/bean/admin/AdminQueryBean$DataBean.class" afterPath="$PROJECT_DIR$/out/production/IntelliExpressCabinet/com/thai/IntelliExpCab/bean/admin/AdminQueryBean$DataBean.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IntelliExpressCabinet/com/thai/IntelliExpCab/bean/admin/AdminQueryBean.class" afterPath="$PROJECT_DIR$/out/production/IntelliExpressCabinet/com/thai/IntelliExpCab/bean/admin/AdminQueryBean.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IntelliExpressCabinet/com/thai/IntelliExpCab/http/HttpConsf.class" afterPath="$PROJECT_DIR$/out/production/IntelliExpressCabinet/com/thai/IntelliExpCab/http/HttpConsf.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IntelliExpressCabinet/com/thai/IntelliExpCab/initdevice/ui/InitFail.class" afterPath="$PROJECT_DIR$/out/production/IntelliExpressCabinet/com/thai/IntelliExpCab/initdevice/ui/InitFail.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IntelliExpressCabinet/com/thai/IntelliExpCab/initdevice/ui/InitStart.class" afterPath="$PROJECT_DIR$/out/production/IntelliExpressCabinet/com/thai/IntelliExpCab/initdevice/ui/InitStart.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IntelliExpressCabinet/com/thai/IntelliExpCab/initdevice/ui/InitSuccess$1.class" afterPath="$PROJECT_DIR$/out/production/IntelliExpressCabinet/com/thai/IntelliExpCab/initdevice/ui/InitSuccess$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IntelliExpressCabinet/com/thai/IntelliExpCab/initdevice/ui/InitSuccess.class" afterPath="$PROJECT_DIR$/out/production/IntelliExpressCabinet/com/thai/IntelliExpCab/initdevice/ui/InitSuccess.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IntelliExpressCabinet/com/thai/IntelliExpCab/initdevice/ui/InitWaitNum.class" afterPath="$PROJECT_DIR$/out/production/IntelliExpressCabinet/com/thai/IntelliExpCab/initdevice/ui/InitWaitNum.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IntelliExpressCabinet/com/thai/IntelliExpCab/initdevice/ui/SyncFail.class" afterPath="$PROJECT_DIR$/out/production/IntelliExpressCabinet/com/thai/IntelliExpCab/initdevice/ui/SyncFail.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IntelliExpressCabinet/com/thai/IntelliExpCab/initdevice/ui/SyncSuccess$1.class" afterPath="$PROJECT_DIR$/out/production/IntelliExpressCabinet/com/thai/IntelliExpCab/initdevice/ui/SyncSuccess$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IntelliExpressCabinet/com/thai/IntelliExpCab/initdevice/ui/SyncSuccess$2.class" afterPath="$PROJECT_DIR$/out/production/IntelliExpressCabinet/com/thai/IntelliExpCab/initdevice/ui/SyncSuccess$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IntelliExpressCabinet/com/thai/IntelliExpCab/initdevice/ui/SyncSuccess$3.class" afterPath="$PROJECT_DIR$/out/production/IntelliExpressCabinet/com/thai/IntelliExpCab/initdevice/ui/SyncSuccess$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IntelliExpressCabinet/com/thai/IntelliExpCab/initdevice/ui/SyncSuccess.class" afterPath="$PROJECT_DIR$/out/production/IntelliExpressCabinet/com/thai/IntelliExpCab/initdevice/ui/SyncSuccess.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IntelliExpressCabinet/com/thai/IntelliExpCab/initdevice/ui/UploadFail.class" afterPath="$PROJECT_DIR$/out/production/IntelliExpressCabinet/com/thai/IntelliExpCab/initdevice/ui/UploadFail.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IntelliExpressCabinet/com/thai/IntelliExpCab/maingui/ui/CustomerUI.class" afterPath="$PROJECT_DIR$/out/production/IntelliExpressCabinet/com/thai/IntelliExpCab/maingui/ui/CustomerUI.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IntelliExpressCabinet/com/thai/IntelliExpCab/maingui/ui/MainPageUI$1.class" afterPath="$PROJECT_DIR$/out/production/IntelliExpressCabinet/com/thai/IntelliExpCab/maingui/ui/MainPageUI$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IntelliExpressCabinet/com/thai/IntelliExpCab/maingui/ui/MainPageUI$2.class" afterPath="$PROJECT_DIR$/out/production/IntelliExpressCabinet/com/thai/IntelliExpCab/maingui/ui/MainPageUI$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IntelliExpressCabinet/com/thai/IntelliExpCab/maingui/ui/MainPageUI.class" afterPath="$PROJECT_DIR$/out/production/IntelliExpressCabinet/com/thai/IntelliExpCab/maingui/ui/MainPageUI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IntelliExpressCabinet/com/thai/IntelliExpCab/utils/HttpUtil.class" afterPath="$PROJECT_DIR$/out/production/IntelliExpressCabinet/com/thai/IntelliExpCab/utils/HttpUtil.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/thai/intelliexpcab/bean/admin/AdminBean.java" afterPath="$PROJECT_DIR$/src/com/thai/intelliexpcab/bean/admin/AdminBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/thai/intelliexpcab/bean/admin/AdminQueryBean.java" afterPath="$PROJECT_DIR$/src/com/thai/intelliexpcab/bean/admin/AdminQueryBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/thai/intelliexpcab/http/HttpConsf.java" afterPath="$PROJECT_DIR$/src/com/thai/intelliexpcab/http/HttpConsf.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/thai/intelliexpcab/initdevice/ui/InitFail.java" afterPath="$PROJECT_DIR$/src/com/thai/intelliexpcab/initdevice/ui/InitFail.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/thai/intelliexpcab/initdevice/ui/InitStart.java" afterPath="$PROJECT_DIR$/src/com/thai/intelliexpcab/initdevice/ui/InitStart.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/thai/intelliexpcab/initdevice/ui/InitSuccess.java" afterPath="$PROJECT_DIR$/src/com/thai/intelliexpcab/initdevice/ui/InitSuccess.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/thai/intelliexpcab/initdevice/ui/InitWaitNum.java" afterPath="$PROJECT_DIR$/src/com/thai/intelliexpcab/initdevice/ui/InitWaitNum.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/thai/intelliexpcab/initdevice/ui/SyncFail.java" afterPath="$PROJECT_DIR$/src/com/thai/intelliexpcab/initdevice/ui/SyncFail.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/thai/intelliexpcab/initdevice/ui/SyncSuccess.java" afterPath="$PROJECT_DIR$/src/com/thai/intelliexpcab/initdevice/ui/SyncSuccess.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/thai/intelliexpcab/maingui/ui/CustomPanel.java" afterPath="$PROJECT_DIR$/src/com/thai/intelliexpcab/maingui/ui/CustomPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/thai/intelliexpcab/maingui/ui/LanguageUI.java" afterPath="$PROJECT_DIR$/src/com/thai/intelliexpcab/maingui/ui/LanguageUI.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/thai/intelliexpcab/initdevice/ui/UploadFail.java" afterPath="$PROJECT_DIR$/src/com/thai/intelliexpcab/initdevice/ui/UploadFail.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/thai/intelliexpcab/maingui/ui/CustomerUI.java" afterPath="$PROJECT_DIR$/src/com/thai/intelliexpcab/maingui/ui/CustomerUI.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/thai/intelliexpcab/maingui/ui/MainPageUI.java" afterPath="$PROJECT_DIR$/src/com/thai/intelliexpcab/maingui/ui/MainPageUI.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/thai/intelliexpcab/utils/HttpUtil.java" afterPath="$PROJECT_DIR$/src/com/thai/intelliexpcab/utils/HttpUtil.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,76 +50,45 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/IntelliExpressCabinet$InitSuccess.coverage" NAME="InitSuccess Coverage Results" MODIFIED="1510563282939" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.thai.intelliexpcab.initdevice.ui.*</FILTER>
+    </SUITE>
+  </component>
   <component name="FileColors">
     <fileColor scope="Non-Project Files (Material Default)" color="2E3C43" />
     <fileColor scope="Non-Project Files (Material Darker)" color="323232" />
     <fileColor scope="Non-Project Files (Material Lighter)" color="eae8e8" />
     <fileColor scope="Non-Project Files (Material Palenight)" color="2f2e43" />
+    <fileColor scope="Non-Project Files (Material Oceanic)" color="2E3C43" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainPageUI.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/maingui/ui/MainPageUI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="78" column="21" lean-forward="false" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
-              <folding>
-                <element signature="e#2477#2691#0" expanded="true" />
-                <element signature="e#2690#2691#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LanguageUI.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/maingui/ui/LanguageUI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="83" column="46" lean-forward="true" selection-start-line="83" selection-start-column="46" selection-end-line="83" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2388#2831#0" expanded="true" />
-                <element signature="e#2830#2831#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InitSuccess.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/initdevice/ui/InitSuccess.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="89" column="31" lean-forward="true" selection-start-line="89" selection-start-column="31" selection-end-line="89" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SyncSuccess.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/initdevice/ui/SyncSuccess.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1798">
-              <caret line="139" column="25" lean-forward="true" selection-start-line="139" selection-start-column="25" selection-end-line="139" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CustomerUI.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/maingui/ui/CustomerUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="487">
-              <caret line="31" column="21" lean-forward="true" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+            <state relative-caret-position="553">
+              <caret line="127" column="5" lean-forward="true" selection-start-line="127" selection-start-column="5" selection-end-line="127" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomPanel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/maingui/ui/CustomPanel.java">
+      <file leaf-file-name="CustomLabel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/maingui/ui/CustomLabel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="17" column="32" lean-forward="false" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+            <state relative-caret-position="72">
+              <caret line="4" column="41" lean-forward="true" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainPageUI.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/maingui/ui/MainPageUI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="364">
+              <caret line="180" column="22" lean-forward="false" selection-start-line="180" selection-start-column="22" selection-end-line="180" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -113,14 +110,12 @@
       <find>javax.swing</find>
       <find>button2</find>
       <find>java.awt.</find>
-      <find>demo3/java</find>
       <find>javax.swing.</find>
+      <find>demo3/java</find>
     </findStrings>
     <replaceStrings>
       <replace />
       <replace>intelliexpcab</replace>
-      <replace>intelliexpcab</replace>
-      <replace />
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -134,26 +129,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/thai/IntelliExpCab/initdevice/ui/InitStart.java" />
-        <option value="$PROJECT_DIR$/src/com/thai/IntelliExpCab/initdevice/ui/InitWaitNum.java" />
-        <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/initdevice/ui/InitStart.java" />
-        <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/initdevice/ui/InitWaitNum.java" />
-        <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/initdevice/ui/InitFail.java" />
-        <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/initdevice/ui/SyncFail.java" />
-        <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/initdevice/ui/UploadFail.java" />
-        <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/maingui/ui/CustomerUI.java" />
-        <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/serial/SerialReader.java" />
         <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/serial/SerialTool.java" />
-        <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/serial/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/maingui/ui/SendInputUI.java" />
         <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/maingui/ui/SendChooseUI.java" />
         <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/maingui/ui/SendInUI.java" />
         <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/maingui/ui/SendConfigUI.java" />
-        <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/maingui/ui/SendSuccessUI.java" />
-        <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/http/HttpConsf.java" />
         <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/SocketClient.java" />
         <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/http/HttpUtil.java" />
-        <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/utils/HttpUtil.java" />
         <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/utils/XorUtils.java" />
         <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/utils/PortSignalUtil.java" />
         <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/Dom4JReadXml.java" />
@@ -164,8 +145,6 @@
         <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/bean/take/TakeBean.java" />
         <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/bean/take/TakeSuccessBean.java" />
         <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/bean/take/TakeCheckBean.java" />
-        <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/bean/admin/AdminBean.java" />
-        <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/bean/admin/AdminQueryBean.java" />
         <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/bean/admin/AminUrlBean.java" />
         <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/bean/admin/AdminModelBean.java" />
         <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/bean/admin/AdminUserBean.java" />
@@ -174,14 +153,33 @@
         <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/bean/UpdateBean.java" />
         <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/bean/ads/AdminAdBean.java" />
         <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/bean/ads/AdsBean.java" />
-        <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/maingui/ui/TakeInputUI.java" />
         <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/maingui/ui/TakeOutUI.java" />
-        <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/maingui/ui/TakeSuccessUI.java" />
         <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/maingui/ui/CustomPanel.java" />
-        <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/maingui/ui/MainPageUI.java" />
         <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/maingui/ui/LanguageUI.java" />
-        <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/initdevice/ui/InitSuccess.java" />
+        <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/initdevice/ui/SyncFail.java" />
+        <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/bean/admin/AdminBean.java" />
+        <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/initdevice/ui/InitFail.java" />
+        <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/initdevice/ui/UploadFail.java" />
+        <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/bean/admin/AdminQueryBean.java" />
+        <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/utils/HttpUtil.java" />
+        <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/http/HttpConsf.java" />
+        <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/serial/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/init.xml" />
+        <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/init.json" />
+        <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/maingui/ui/TakeSuccessUI.java" />
+        <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/maingui/ui/TakeInputUI.java" />
         <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/initdevice/ui/SyncSuccess.java" />
+        <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/maingui/ui/SendInputUI.java" />
+        <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/maingui/ui/SendSuccessUI.java" />
+        <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/bean/admin/SettingsBean.java" />
+        <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/initdevice/ui/InitStart.java" />
+        <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/initdevice/ui/InitWaitNum.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/maingui/ui/MainPageUI.java" />
+        <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/initdevice/ui/InitSuccess.java" />
+        <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/maingui/ui/CustomPanel1.java" />
+        <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/maingui/ui/CustomLabel.java" />
+        <option value="$PROJECT_DIR$/src/com/thai/intelliexpcab/maingui/ui/CustomerUI.java" />
       </list>
     </option>
   </component>
@@ -362,10 +360,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -416,17 +414,7 @@
               <item name="thai" type="462c0819:PsiDirectoryNode" />
               <item name="intelliexpcab" type="462c0819:PsiDirectoryNode" />
               <item name="bean" type="462c0819:PsiDirectoryNode" />
-              <item name="ads" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IntelliExpressCabinet" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IntelliExpressCabinet" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="thai" type="462c0819:PsiDirectoryNode" />
-              <item name="intelliexpcab" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
-              <item name="take" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="IntelliExpressCabinet" type="b2602c69:ProjectViewProjectNode" />
@@ -482,15 +470,6 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="thai" type="462c0819:PsiDirectoryNode" />
               <item name="intelliexpcab" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IntelliExpressCabinet" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IntelliExpressCabinet" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="thai" type="462c0819:PsiDirectoryNode" />
-              <item name="intelliexpcab" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -502,7 +481,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Colors" />
     <property name="last_opened_file_path" value="D:/jdk1.8_x32/jre/lib/ext/RXTXcomm.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -510,17 +489,18 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="true" />
     <property name="Repository.Attach.Sources" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="Main&#9;FILE&#9;file://D:/JetBrains/IdeaProjects/IntelliExpressCabinet/src/com/thai/intelliexpcab/maingui/ui/MainPageUI.java&#10;button16&#9;PSI&#9;JAVA://com.thai.intelliexpcab.maingui.ui.TakeInputUI#jButton16" />
+    <property name="SearchEverywhereHistoryKey" value="Main&#9;FILE&#9;file://D:/JetBrains/IdeaProjects/IntelliExpressCabinet/src/Main.java&#10;InitS&#9;FILE&#9;file://D:/JetBrains/IdeaProjects/IntelliExpressCabinet/src/com/thai/intelliexpcab/initdevice/ui/InitStart.java&#10;button16&#9;PSI&#9;JAVA://com.thai.intelliexpcab.maingui.ui.TakeInputUI#jButton16" />
+    <property name="extract.method.default.visibility" value="private" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.thai.intelliexpcab.consf" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\JetBrains\IdeaProjects\IntelliExpressCabinet\src\com\thai\intelliexpcab\resources" />
       <recent name="D:\JetBrains\IdeaProjects\IntelliExpressCabinet\src\com\thai\intelliexpcab" />
       <recent name="D:\JetBrains\IdeaProjects\IntelliExpressCabinet\src\com\thai\intelliexpcab\http" />
       <recent name="D:\JetBrains\IdeaProjects\IntelliExpressCabinet\src\com\thai\IntelliExpCab" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.thai.intelliexpcab.consf" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -535,7 +515,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CustomerUI">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="CustomerUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -574,14 +554,9 @@
       <module name="IntelliExpressCabinet" />
       <envs />
     </configuration>
-    <configuration name="LanguageUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.thai.intelliexpcab.maingui.ui.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.thai.intelliexpcab.maingui.ui.LanguageUI" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="Main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
@@ -612,14 +587,14 @@
       <module name="IntelliExpressCabinet" />
       <envs />
     </configuration>
-    <configuration name="SyncSuccess" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="UploadFail" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.thai.intelliexpcab.initdevice.ui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.thai.intelliexpcab.initdevice.ui.SyncSuccess" />
+      <option name="MAIN_CLASS_NAME" value="com.thai.intelliexpcab.initdevice.ui.UploadFail" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
@@ -647,19 +622,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.MainPageUI" />
-      <item index="1" class="java.lang.String" itemvalue="Application.LanguageUI" />
-      <item index="2" class="java.lang.String" itemvalue="Application.InitSuccess" />
-      <item index="3" class="java.lang.String" itemvalue="Application.SyncSuccess" />
+      <item index="0" class="java.lang.String" itemvalue="Application.Main" />
+      <item index="1" class="java.lang.String" itemvalue="Application.InitSuccess" />
+      <item index="2" class="java.lang.String" itemvalue="Application.MainPageUI" />
+      <item index="3" class="java.lang.String" itemvalue="Application.UploadFail" />
       <item index="4" class="java.lang.String" itemvalue="Application.CustomerUI" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.CustomerUI" />
-        <item index="1" class="java.lang.String" itemvalue="Application.SyncSuccess" />
-        <item index="2" class="java.lang.String" itemvalue="Application.InitSuccess" />
-        <item index="3" class="java.lang.String" itemvalue="Application.MainPageUI" />
-        <item index="4" class="java.lang.String" itemvalue="Application.LanguageUI" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="1" class="java.lang.String" itemvalue="Application.CustomerUI" />
+        <item index="2" class="java.lang.String" itemvalue="Application.MainPageUI" />
+        <item index="3" class="java.lang.String" itemvalue="Application.UploadFail" />
+        <item index="4" class="java.lang.String" itemvalue="Application.InitSuccess" />
       </list>
     </recent_temporary>
   </component>
@@ -688,11 +663,15 @@
       <workItem from="1510387803912" duration="6337000" />
       <workItem from="1510535467561" duration="17000" />
       <workItem from="1510535527684" duration="1051000" />
+      <workItem from="1510536893741" duration="12091000" />
+      <workItem from="1510560866699" duration="11890000" />
+      <workItem from="1510620994340" duration="988000" />
+      <workItem from="1510622042374" duration="1715000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42624000" />
+    <option name="totallyTimeSpent" value="69308000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
@@ -700,18 +679,18 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910052" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32838982" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19067797" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="22" y="449" width="1876" height="181" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22775424" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="22" y="449" width="1876" height="181" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32944915" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910052" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22547974" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23560767" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -724,6 +703,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910052" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -735,156 +715,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="12" />
+      <option name="time" value="25" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://D:/JDK1.8/src.zip!/java/awt/Window.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="800" column="16" lean-forward="false" selection-start-line="800" selection-start-column="16" selection-end-line="800" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/resources/init_3_3.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/initdevice/ui/InitWaitNum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1083">
-          <caret line="60" column="43" lean-forward="false" selection-start-line="60" selection-start-column="43" selection-end-line="60" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/resources/init_3_1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/resources/init_3_2.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/resources/getNumFa.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/initdevice/ui/InitStart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="27" column="46" lean-forward="false" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/resources/0.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/initdevice/ui/InitFail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/initdevice/ui/SyncFail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="15" column="27" lean-forward="false" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/initdevice/ui/UploadFail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="897">
-          <caret line="73" column="75" lean-forward="false" selection-start-line="73" selection-start-column="75" selection-end-line="73" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/serial/SerialTool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1222">
-          <caret line="22" column="6" lean-forward="false" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/serial/SerialReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3122">
-          <caret line="89" column="5" lean-forward="false" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/serial/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="11" lean-forward="true" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/maingui/ui/SendInputUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="56" column="22" lean-forward="true" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/maingui/ui/SendInUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="84" column="61" lean-forward="true" selection-start-line="84" selection-start-column="61" selection-end-line="84" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/maingui/ui/SendConfigUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="56" column="41" lean-forward="true" selection-start-line="56" selection-start-column="41" selection-end-line="56" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/maingui/ui/SendChooseUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="65" column="31" lean-forward="true" selection-start-line="60" selection-start-column="8" selection-end-line="65" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/jdk1.8_x32/src.zip!/javax/swing/GroupLayout.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="276" column="0" lean-forward="true" selection-start-line="276" selection-start-column="0" selection-end-line="276" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/utils/XorUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/utils/HttpUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/maingui/ui/SendSuccessUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="36" column="75" lean-forward="false" selection-start-line="26" selection-start-column="8" selection-end-line="36" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/consf/Constant.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
@@ -892,24 +727,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/Dom4JReadXml.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="61" column="33" lean-forward="false" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/SocketClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
           <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/http/HttpConsf.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="93" lean-forward="false" selection-start-line="22" selection-start-column="93" selection-end-line="22" selection-end-column="93" />
         </state>
       </provider>
     </entry>
@@ -928,38 +749,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/bean/admin/AdminBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="39" column="18" lean-forward="false" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/bean/admin/AminUrlBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1178">
-          <caret line="62" column="18" lean-forward="false" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/bean/admin/AdminQueryBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1833">
-          <caret line="188" column="18" lean-forward="false" selection-start-line="188" selection-start-column="18" selection-end-line="188" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/bean/admin/AdminUserBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-471">
           <caret line="57" column="26" lean-forward="true" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/bean/admin/AdminModelBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1117">
-          <caret line="20" column="20" lean-forward="true" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -984,34 +777,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/bean/SendBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="931">
-          <caret line="65" column="40" lean-forward="false" selection-start-line="65" selection-start-column="40" selection-end-line="65" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="40" lean-forward="false" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/maingui/ui/TakeInputUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="61" column="73" lean-forward="true" selection-start-line="51" selection-start-column="8" selection-end-line="61" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/maingui/ui/TakeSuccessUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/maingui/ui/TakeOutUI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -1019,19 +784,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/utils/JsonUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/utils/PortSignalUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="839">
           <caret line="48" column="6" lean-forward="false" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1039,7 +795,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="725">
           <caret line="114" column="5" lean-forward="false" selection-start-line="114" selection-start-column="5" selection-end-line="114" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1051,49 +806,310 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/maingui/ui/MainPageUI.java">
+    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/initdevice/ui/SyncFail.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="78" column="21" lean-forward="false" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
-          <folding>
-            <element signature="e#2477#2691#0" expanded="true" />
-            <element signature="e#2690#2691#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="265">
+          <caret line="65" column="45" lean-forward="true" selection-start-line="65" selection-start-column="45" selection-end-line="65" selection-end-column="45" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/maingui/ui/LanguageUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="83" column="46" lean-forward="true" selection-start-line="83" selection-start-column="46" selection-end-line="83" selection-end-column="46" />
+        <state relative-caret-position="323">
+          <caret line="69" column="31" lean-forward="true" selection-start-line="69" selection-start-column="31" selection-end-line="69" selection-end-column="31" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2388#2831#0" expanded="true" />
-            <element signature="e#2830#2831#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/initdevice/ui/InitSuccess.java">
+    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/bean/admin/AdminModelBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="89" column="31" lean-forward="true" selection-start-line="89" selection-start-column="31" selection-end-line="89" selection-end-column="31" />
+        <state relative-caret-position="380">
+          <caret line="20" column="20" lean-forward="true" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/bean/SendBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="35" lean-forward="true" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/initdevice/ui/InitFail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="55" column="27" lean-forward="true" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/initdevice/ui/UploadFail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="56" column="26" lean-forward="false" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/bean/admin/AdminBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding>
+            <element signature="e#255#256#0" expanded="false" />
+            <element signature="e#282#283#0" expanded="false" />
+            <element signature="e#319#320#0" expanded="false" />
+            <element signature="e#351#352#0" expanded="false" />
+            <element signature="e#381#382#0" expanded="false" />
+            <element signature="e#407#408#0" expanded="false" />
+            <element signature="e#445#446#0" expanded="false" />
+            <element signature="e#475#476#0" expanded="false" />
+            <element signature="e#518#519#0" expanded="false" />
+            <element signature="e#545#546#0" expanded="false" />
+            <element signature="e#597#598#0" expanded="false" />
+            <element signature="e#629#630#0" expanded="false" />
+            <element signature="e#795#796#0" expanded="false" />
+            <element signature="e#836#837#0" expanded="false" />
+            <element signature="e#892#893#0" expanded="false" />
+            <element signature="e#944#945#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/utils/HttpUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="156" column="66" lean-forward="false" selection-start-line="156" selection-start-column="66" selection-end-line="156" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/serial/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.2/gson-2.8.2-sources.jar!/com/google/gson/internal/JsonReaderInternalAccess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.2/gson-2.8.2-sources.jar!/com/google/gson/stream/JsonReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4536">
+          <caret line="271" column="0" lean-forward="false" selection-start-line="271" selection-start-column="0" selection-end-line="271" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/jdk1.8_x32/src.zip!/java/lang/ClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="356" column="0" lean-forward="false" selection-start-line="356" selection-start-column="0" selection-end-line="356" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/jdk1.8_x32/src.zip!/javax/swing/JFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="188" column="0" lean-forward="false" selection-start-line="188" selection-start-column="0" selection-end-line="188" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/jdk1.8_x32/src.zip!/java/awt/Frame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="920" column="0" lean-forward="false" selection-start-line="920" selection-start-column="0" selection-end-line="920" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/jdk1.8_x32/src.zip!/javax/swing/JPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="116" column="0" lean-forward="false" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/Dom4JReadXml.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="61" column="33" lean-forward="true" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/init.xml" />
+    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/bean/admin/AdminQueryBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <element signature="e#754#755#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/utils/JsonUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="37" column="32" lean-forward="true" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.2/gson-2.8.2-sources.jar!/com/google/gson/Gson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1326">
+          <caret line="578" column="16" lean-forward="false" selection-start-line="578" selection-start-column="16" selection-end-line="578" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/jdk1.8_x32/src.zip!/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="2260" column="0" lean-forward="false" selection-start-line="2260" selection-start-column="0" selection-end-line="2260" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/maingui/ui/TakeSuccessUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="54" column="27" lean-forward="false" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/maingui/ui/TakeInputUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="97" column="12" lean-forward="false" selection-start-line="97" selection-start-column="12" selection-end-line="97" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/maingui/ui/SendInputUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="93" column="27" lean-forward="false" selection-start-line="93" selection-start-column="27" selection-end-line="93" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/maingui/ui/SendSuccessUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-405">
+          <caret line="52" column="27" lean-forward="false" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/bean/admin/AminUrlBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="62" column="18" lean-forward="false" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/Settings.json" />
+    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/bean/admin/SettingsBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/initdevice/ui/InitWaitNum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="66" column="30" lean-forward="false" selection-start-line="66" selection-start-column="30" selection-end-line="66" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/initdevice/ui/InitStart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="60" column="22" lean-forward="true" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="19" column="49" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="49" />
+          <folding>
+            <element signature="e#463#464#0" expanded="false" />
+            <element signature="e#496#497#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/initdevice/ui/SyncSuccess.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1798">
-          <caret line="139" column="25" lean-forward="true" selection-start-line="139" selection-start-column="25" selection-end-line="139" selection-end-column="25" />
+        <state relative-caret-position="-837">
+          <caret line="138" column="43" lean-forward="false" selection-start-line="138" selection-start-column="43" selection-end-line="138" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/initdevice/ui/InitSuccess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="130" column="17" lean-forward="true" selection-start-line="130" selection-start-column="17" selection-end-line="130" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/maingui/ui/CustomPanel1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="127" lean-forward="true" selection-start-line="15" selection-start-column="127" selection-end-line="15" selection-end-column="127" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/http/HttpConsf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/maingui/ui/MainPageUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="180" column="22" lean-forward="false" selection-start-line="180" selection-start-column="22" selection-end-line="180" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/maingui/ui/CustomLabel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="41" lean-forward="true" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/thai/intelliexpcab/maingui/ui/CustomerUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="31" column="21" lean-forward="true" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+        <state relative-caret-position="553">
+          <caret line="127" column="5" lean-forward="true" selection-start-line="127" selection-start-column="5" selection-end-line="127" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -1104,6 +1120,17 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="Copyright.UI">
+        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>

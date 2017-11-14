@@ -11,14 +11,14 @@ public class InitFail extends JFrame {
     private JLabel jLabel2;
     private JPanel jPanel1;
 
-    public InitFail() {
+    public InitFail(String delNumber) {
         this.setUndecorated(true);
 //        this.setExtendedState(JFrame.MAXIMIZED_BOTH);
         this.requestFocus();
         this.setAlwaysOnTop(true);
         this.setResizable(false);
         this.setLocation(0, 0);
-        initComponents();
+        initComponents(delNumber);
     }
 
     public static void main(String[] args) {
@@ -32,10 +32,10 @@ public class InitFail extends JFrame {
                 break;
             }
         }
-        EventQueue.invokeLater(() -> new InitFail().setVisible(true));
+        EventQueue.invokeLater(() -> new InitFail(null).setVisible(true));
     }
 
-    private void initComponents() {
+    private void initComponents(String delNumber) {
         jPanel1 = new JPanel();
         jLabel1 = new JLabel();
         jLabel2 = new JLabel();
@@ -47,12 +47,13 @@ public class InitFail extends JFrame {
         jLabel2.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/getNumFa.png")));
         jButton1.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/init_3_3.png")));
         jButton1.addActionListener(evt -> {
-            new InitWaitNum().setVisible(true);
+            new InitWaitNum(delNumber).setVisible(true);
             InitFail.this.dispose();
         });
         jButton2.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/init_3_4.png")));
         jButton2.addActionListener(evt -> {
-            //todo MainPage
+            new InitStart().setVisible(true);
+            this.dispose();
         });
         GroupLayout jPanel1Layout = new GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);

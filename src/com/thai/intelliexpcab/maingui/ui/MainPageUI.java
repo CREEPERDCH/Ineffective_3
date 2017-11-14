@@ -1,7 +1,12 @@
 package com.thai.intelliexpcab.maingui.ui;
 
 
+import com.thai.intelliexpcab.bean.admin.AdminQueryBean;
+import com.thai.intelliexpcab.bean.admin.SettingsBean;
+import com.thai.intelliexpcab.http.HttpConsf;
 import com.thai.intelliexpcab.initdevice.ui.InitStart;
+import com.thai.intelliexpcab.utils.HttpUtil;
+import com.thai.intelliexpcab.utils.JsonUtils;
 
 import javax.swing.*;
 import java.awt.*;
@@ -9,7 +14,13 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
 import java.text.SimpleDateFormat;
+import java.util.HashMap;
+import java.util.Map;
 
 public class MainPageUI extends JFrame {
 
@@ -17,15 +28,16 @@ public class MainPageUI extends JFrame {
     private JButton jButton2;
     private JButton jButton3;
     private JLabel jLabel1;
-    private JLabel jLabel2;
+    public JLabel jLabel2;
     private JLabel jLabel3;
     private JLabel jLabel4;
     private JLabel jLabel5;
     private JLabel jLabel6;
-    private JLabel jLabel8;
+    public JLabel jLabel8;
     private JPanel jPanel1;
     private JPanel jPanel2;
     private JPanel jPanel3;
+    private SettingsBean object;
 
     public MainPageUI() {
         this.setUndecorated(true);
@@ -81,7 +93,18 @@ public class MainPageUI extends JFrame {
         });
         jLabel2.setFont(new java.awt.Font("微软雅黑", Font.PLAIN, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel2.setText("十号巷  宏府东街  市中心行政区  曼谷");
+
+
+        File file = new File("D:\\Settings.txt");
+        try {
+            ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream(file));
+            object = (SettingsBean) objectInputStream.readObject();
+        } catch (IOException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        jLabel2.setText(object.getDeliveryRegion() + " " + object.getDeliverySchool());
+        jLabel8.setText(object.getDeliveryNo());
+
         jLabel3.setVerticalAlignment(SwingConstants.TOP);
         jLabel4.setVerticalAlignment(SwingConstants.BOTTOM);
         jLabel6.setFont(new java.awt.Font("微软雅黑", Font.PLAIN, 18)); // NOI18N
@@ -89,7 +112,6 @@ public class MainPageUI extends JFrame {
         jLabel6.setText("快递柜地址 : ");
         jLabel8.setFont(new java.awt.Font("微软雅黑", Font.PLAIN, 14)); // NOI18N
         jLabel8.setHorizontalAlignment(SwingConstants.CENTER);
-        jLabel8.setText("01022228889");
         jLabel8.setVerticalAlignment(SwingConstants.TOP);
         GroupLayout jPanel2Layout = new GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);

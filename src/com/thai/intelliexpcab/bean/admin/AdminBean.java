@@ -1,5 +1,6 @@
 package com.thai.intelliexpcab.bean.admin;
 
+
 public class AdminBean {
 
     /**
@@ -10,7 +11,7 @@ public class AdminBean {
 
     private int code;
     private String msg;
-    private Object data;
+    private AdminBean.DataBean data;
 
     public int getCode() {
         return code;
@@ -28,12 +29,35 @@ public class AdminBean {
         this.msg = msg;
     }
 
-    public Object getData() {
+    public AdminBean.DataBean getData() {
         return data;
     }
 
-    public void setData(Object data) {
+    public void setData(AdminBean.DataBean data) {
         this.data = data;
+    }
+
+    public static class DataBean {
+        /**
+         * sendCode : 431936
+         */
+
+        private String deliveryNo;
+
+        public String getDeliveryNo() {
+            return deliveryNo;
+        }
+
+        public void setDeliveryNo(String deliveryNo) {
+            this.deliveryNo = deliveryNo;
+        }
+
+        @Override
+        public String toString() {
+            return "DataBean{" +
+                    "sendCode='" + deliveryNo + '\'' +
+                    '}';
+        }
     }
 
     @Override

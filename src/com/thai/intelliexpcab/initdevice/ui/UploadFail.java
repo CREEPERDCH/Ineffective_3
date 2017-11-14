@@ -49,7 +49,7 @@ public class UploadFail extends JFrame {
         jLabel2.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/uploadFail.png"))); // NOI18N
         jButton1.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/again.png"))); // NOI18N
         jButton1.addActionListener(evt -> {
-            new SyncSuccess().setVisible(true);
+            new SyncSuccess(null).setVisible(true);
             UploadFail.this.dispose();
         });
         jButton2.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/cancel.png"))); // NOI18N

@@ -3,7 +3,7 @@ package com.thai.intelliexpcab.http;
 public class HttpConsf {
 
     //base url
-    public static final String BASE_URL = "http://127.0.0.1:8081";
+    public static final String BASE_URL = "http://192.168.3.254:8080/deliverylockers-web";
 
     /**
      * 派件模块

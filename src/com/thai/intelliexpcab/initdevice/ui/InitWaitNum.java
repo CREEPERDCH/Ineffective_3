@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.util.Objects;
 
 public class InitWaitNum extends JFrame {
 
@@ -11,14 +12,14 @@ public class InitWaitNum extends JFrame {
     private JLabel jLabel2;
     private JPanel jPanel1;
 
-    public InitWaitNum() {
+    public InitWaitNum(String delNumber) {
         this.setUndecorated(true);
 //        this.setExtendedState(JFrame.MAXIMIZED_BOTH);
         this.requestFocus();
         this.setAlwaysOnTop(true);
         this.setResizable(false);
         this.setLocation(0, 0);
-        initComponents();
+        initComponents(delNumber);
     }
 
     public static void main(String[] args) {
@@ -32,35 +33,44 @@ public class InitWaitNum extends JFrame {
                 break;
             }
         }
-        EventQueue.invokeLater(() -> new InitWaitNum().setVisible(true));
+        EventQueue.invokeLater(() -> new InitWaitNum(null).setVisible(true));
     }
 
-    private void initComponents() {
+    private void initComponents(String delNumber) {
         jPanel1 = new JPanel();
         jLabel1 = new JLabel();
         jLabel2 = new JLabel();
-
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-
         jPanel1.setBackground(new Color(255, 255, 255));
-
         jLabel1.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/init_4.png"))); // NOI18N
-        jLabel1.addMouseListener(new MouseAdapter() {
-            public void mousePressed(MouseEvent evt) {
-                //todo test Fail
-                new InitFail().setVisible(true);
-                InitWaitNum.this.dispose();
-            }
-        });
-
+//        jLabel1.addMouseListener(new MouseAdapter() {
+//            public void mousePressed(MouseEvent evt) {
+//                new InitFail().setVisible(true);
+//                InitWaitNum.this.dispose();
+//            }
+//        });
         jLabel2.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/init_5.png"))); // NOI18N
-        jLabel2.addMouseListener(new MouseAdapter() {
-            public void mousePressed(MouseEvent evt) {
-                //todo test success
-                new InitSuccess().setVisible(true);
-                InitWaitNum.this.dispose();
+//        jLabel2.addMouseListener(new MouseAdapter() {
+//            public void mousePressed(MouseEvent evt) {
+//                new InitSuccess().setVisible(true);
+//                InitWaitNum.this.dispose();
+//            }
+//        });
+
+        new Thread(() -> {
+            try {
+                Thread.sleep(2000);
+                if (Objects.equals(delNumber, "000000")) {
+                    new InitFail(delNumber).setVisible(true);
+                    InitWaitNum.this.dispose();
+                } else {
+                    new InitSuccess(delNumber).setVisible(true);
+                    InitWaitNum.this.dispose();
+                }
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
-        });
+        }).start();
 
         GroupLayout jPanel1Layout = new GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -85,7 +95,6 @@ public class InitWaitNum extends JFrame {
                                 .addComponent(jLabel2)
                                 .addContainerGap(453, Short.MAX_VALUE))
         );
-
         GroupLayout layout = new GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -96,7 +105,6 @@ public class InitWaitNum extends JFrame {
                 layout.createParallelGroup(GroupLayout.Alignment.LEADING)
                         .addComponent(jPanel1, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
-
         pack();
     }
 }

@@ -2,19 +2,22 @@ package com.thai.intelliexpcab.maingui.ui;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.text.SimpleDateFormat;
 
 public class CustomerUI extends JFrame {
 
-    private JLabel jLabel10;
-    private JLabel jLabel11;
+    private JButton jButton1;
+    private JLabel jLabel1;
     private JLabel jLabel2;
-    private JLabel jLabel3;
-    private JLabel jLabel9;
     private JPanel jPanel1;
-    private JPanel jPanel4;
+    private JPanel jPanel2;
+    private JPanel jPanel3;
+
+    private int time = 60;
 
     public CustomerUI() {
         this.setUndecorated(true);
@@ -42,89 +45,74 @@ public class CustomerUI extends JFrame {
 
     private void initComponents() {
         jPanel1 = new JPanel();
+        jPanel2 = new JPanel();
+        jButton1 = new JButton();
+        jLabel1 = new JLabel();
         jLabel2 = new JLabel();
-        jLabel3 = new JLabel();
-        jPanel4 = new JPanel();
-        jLabel9 = new JLabel();
-        jLabel10 = new JLabel();
-        jLabel11 = new JLabel();
-
+        jPanel3 = new CustomPanel1();
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-
         jPanel1.setBackground(new Color(255, 255, 255));
-        jPanel1.addMouseListener(new MouseAdapter() {
-            public void mousePressed(MouseEvent evt) {
-                new MainPageUI().setVisible(true);
-                CustomerUI.this.dispose();
-            }
+        jPanel2.setBackground(new Color(251, 205, 57));
+        jButton1.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/return.png"))); // NOI18N
+        jButton1.addActionListener(e -> {
+            new MainPageUI().setVisible(true);
+            this.dispose();
         });
-
-        jLabel2.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/bg_2.png"))); // NOI18N
-
-        jLabel3.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/customer.png"))); // NOI18N
-
-        jPanel4.setBackground(new Color(251, 205, 57));
-
-        jLabel9.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/main_top.png"))); // NOI18N
-        jLabel9.setText("jLabel3");
-
-        this.setTimer1(jLabel10);
-
-        this.setTimer2(jLabel11);
-
-        GroupLayout jPanel4Layout = new GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-                jPanel4Layout.createParallelGroup(GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel4Layout.createSequentialGroup()
-                                .addComponent(jLabel9, GroupLayout.PREFERRED_SIZE, 450, GroupLayout.PREFERRED_SIZE)
+        jLabel1.setFont(new Font("微软雅黑", 1, 24)); // NOI18N
+        jLabel1.setForeground(new Color(255, 255, 255));
+        jLabel1.setHorizontalAlignment(SwingConstants.CENTER);
+        GroupLayout jPanel2Layout = new GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+                jPanel2Layout.createParallelGroup(GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(jButton1, GroupLayout.PREFERRED_SIZE, 105, GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, GroupLayout.DEFAULT_SIZE, Short
                                         .MAX_VALUE)
-                                .addGroup(jPanel4Layout.createParallelGroup(GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(jLabel10, GroupLayout.DEFAULT_SIZE, 113, Short.MAX_VALUE)
-                                        .addComponent(jLabel11, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short
-                                                .MAX_VALUE))
+                                .addComponent(jLabel1, GroupLayout.PREFERRED_SIZE, 100, GroupLayout.PREFERRED_SIZE)
                                 .addContainerGap())
         );
-        jPanel4Layout.setVerticalGroup(
-                jPanel4Layout.createParallelGroup(GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel4Layout.createSequentialGroup()
-                                .addComponent(jLabel9)
-                                .addGap(0, 0, Short.MAX_VALUE))
-                        .addGroup(jPanel4Layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(jLabel10, GroupLayout.PREFERRED_SIZE, 30, GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, GroupLayout.DEFAULT_SIZE, Short
-                                        .MAX_VALUE)
-                                .addComponent(jLabel11, GroupLayout.PREFERRED_SIZE, 34, GroupLayout.PREFERRED_SIZE))
+        jPanel2Layout.setVerticalGroup(
+                jPanel2Layout.createParallelGroup(GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addGap(24, 24, 24)
+                                .addGroup(jPanel2Layout.createParallelGroup(GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(jLabel1, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short
+                                                .MAX_VALUE)
+                                        .addComponent(jButton1, GroupLayout.PREFERRED_SIZE, 49, GroupLayout.PREFERRED_SIZE))
+                                .addContainerGap(27, Short.MAX_VALUE))
         );
-
+        jLabel2.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/customer.png"))); // NOI18N
+        GroupLayout jPanel3Layout = new GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+                jPanel3Layout.createParallelGroup(GroupLayout.Alignment.LEADING)
+                        .addGap(0, 0, Short.MAX_VALUE)
+        );
+        jPanel3Layout.setVerticalGroup(
+                jPanel3Layout.createParallelGroup(GroupLayout.Alignment.LEADING)
+                        .addGap(0, 370, Short.MAX_VALUE)
+        );
         GroupLayout jPanel1Layout = new GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
                 jPanel1Layout.createParallelGroup(GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(GroupLayout.Alignment.TRAILING, false)
-                                        .addComponent(jLabel2, GroupLayout.Alignment.LEADING, GroupLayout.PREFERRED_SIZE,
-                                                0, Short.MAX_VALUE)
-                                        .addComponent(jPanel4, GroupLayout.Alignment.LEADING, GroupLayout.DEFAULT_SIZE,
-                                                GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jLabel3, GroupLayout.PREFERRED_SIZE, 768, GroupLayout.PREFERRED_SIZE))
-                                .addGap(0, 0, Short.MAX_VALUE))
+                        .addComponent(jPanel2, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel2, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jPanel3, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
                 jPanel1Layout.createParallelGroup(GroupLayout.Alignment.LEADING)
                         .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jPanel4, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, javax.swing
+                                .addComponent(jPanel2, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, javax.swing
                                         .GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, GroupLayout.DEFAULT_SIZE, Short
-                                        .MAX_VALUE)
-                                .addComponent(jLabel3, GroupLayout.PREFERRED_SIZE, 524, GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel2)
-                                .addGap(0, 0, 0))
+                                .addComponent(jLabel2, GroupLayout.PREFERRED_SIZE, 542, GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jPanel3, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, javax.swing
+                                        .GroupLayout.PREFERRED_SIZE))
         );
-
         GroupLayout layout = new GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -135,29 +123,27 @@ public class CustomerUI extends JFrame {
                 layout.createParallelGroup(GroupLayout.Alignment.LEADING)
                         .addComponent(jPanel1, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
-
+        this.timeDelay();
         pack();
     }
 
-    private void setTimer1(JLabel label) {
-        final JLabel time = label;
-        new Timer(1000, e -> {
-            long currentTimeMillis = System.currentTimeMillis();
-            SimpleDateFormat simpleDateFormat1 = new SimpleDateFormat("HH:mm:ss");
-            time.setText("       " + simpleDateFormat1.format(currentTimeMillis));
-            time.setFont(new Font("微软雅黑", Font.PLAIN, 18));
-//            time.setHorizontalTextPosition(SwingConstants.BOTTOM);
+    private void timeDelay() {
+        new Thread(() -> {
+            while (time >= 0) {
+                jLabel1.setText(time + "s");
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                time--;
+                System.out.println(time);
+                if (time == 0) {
+                    new MainPageUI().setVisible(true);
+                    CustomerUI.this.dispose();
+                }
+            }
         }).start();
     }
 
-    private void setTimer2(JLabel label) {
-        final JLabel time = label;
-        new Timer(1000, e -> {
-            long currentTimeMillis = System.currentTimeMillis();
-            SimpleDateFormat simpleDateFormat2 = new SimpleDateFormat("MM月dd日 EEEE");
-            time.setText(simpleDateFormat2.format(currentTimeMillis));
-            time.setFont(new Font("微软雅黑", Font.PLAIN, 14));
-//            time.setHorizontalTextPosition(SwingConstants.RIGHT);
-        }).start();
-    }
 }

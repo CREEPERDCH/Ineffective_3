@@ -1,21 +1,18 @@
 package com.thai.intelliexpcab.bean.admin;
 
-import java.util.List;
-
 public class AdminQueryBean {
+
 
     /**
      * code : 200
      * msg : success
-     * data : [{"deliveryNo":1,"deliverySchool":"school","deliveryRegion":"region","deliveryModel":111,"deliveryStatus":2,"createTime":"Nov 7, 2017
-     * 3:03:03 PM","updateTime":"Nov 8, 2017 12:18:22 PM","deliveryPassword":"666666","maintainer":"maintainer",
-     * "maintainerPhone":"maintainer_phone","doorSum":2,"doorUsingSum":2},{"deliveryNo":2,"deliveryStatus":2,"createTime":"Nov 8, 2017 11:26:22
-     * AM","updateTime":"Nov 8, 2017 12:07:31 PM","deliveryPassword":"666666","doorSum":0,"doorUsingSum":0}]
+     * data : {"deliveryNo":1,"deliverySchool":"学校","deliveryRegion":"地区","deliveryModel":"11","deliveryStatus":2,"createTime":1510038183000,
+     * "updateTime":1510144550000,"deliveryPassword":"111","maintainer":"123","maintainerPhone":"1"}
      */
 
     private int code;
     private String msg;
-    private List<DataBean> data;
+    private DataBean data;
 
     public int getCode() {
         return code;
@@ -33,42 +30,38 @@ public class AdminQueryBean {
         this.msg = msg;
     }
 
-    public List<DataBean> getData() {
+    public DataBean getData() {
         return data;
     }
 
-    public void setData(List<DataBean> data) {
+    public void setData(DataBean data) {
         this.data = data;
     }
 
     public static class DataBean {
         /**
          * deliveryNo : 1
-         * deliverySchool : school
-         * deliveryRegion : region
-         * deliveryModel : 111
+         * deliverySchool : 学校
+         * deliveryRegion : 地区
+         * deliveryModel : 11
          * deliveryStatus : 2
-         * createTime : Nov 7, 2017 3:03:03 PM
-         * updateTime : Nov 8, 2017 12:18:22 PM
-         * deliveryPassword : 666666
-         * maintainer : maintainer
-         * maintainerPhone : maintainer_phone
-         * doorSum : 2
-         * doorUsingSum : 2
+         * createTime : 1510038183000
+         * updateTime : 1510144550000
+         * deliveryPassword : 111
+         * maintainer : 123
+         * maintainerPhone : 1
          */
 
         private int deliveryNo;
         private String deliverySchool;
         private String deliveryRegion;
-        private int deliveryModel;
+        private String deliveryModel;
         private int deliveryStatus;
-        private String createTime;
-        private String updateTime;
+        private long createTime;
+        private long updateTime;
         private String deliveryPassword;
         private String maintainer;
         private String maintainerPhone;
-        private int doorSum;
-        private int doorUsingSum;
 
         public int getDeliveryNo() {
             return deliveryNo;
@@ -94,11 +87,11 @@ public class AdminQueryBean {
             this.deliveryRegion = deliveryRegion;
         }
 
-        public int getDeliveryModel() {
+        public String getDeliveryModel() {
             return deliveryModel;
         }
 
-        public void setDeliveryModel(int deliveryModel) {
+        public void setDeliveryModel(String deliveryModel) {
             this.deliveryModel = deliveryModel;
         }
 
@@ -110,19 +103,19 @@ public class AdminQueryBean {
             this.deliveryStatus = deliveryStatus;
         }
 
-        public String getCreateTime() {
+        public long getCreateTime() {
             return createTime;
         }
 
-        public void setCreateTime(String createTime) {
+        public void setCreateTime(long createTime) {
             this.createTime = createTime;
         }
 
-        public String getUpdateTime() {
+        public long getUpdateTime() {
             return updateTime;
         }
 
-        public void setUpdateTime(String updateTime) {
+        public void setUpdateTime(long updateTime) {
             this.updateTime = updateTime;
         }
 
@@ -149,48 +142,5 @@ public class AdminQueryBean {
         public void setMaintainerPhone(String maintainerPhone) {
             this.maintainerPhone = maintainerPhone;
         }
-
-        public int getDoorSum() {
-            return doorSum;
-        }
-
-        public void setDoorSum(int doorSum) {
-            this.doorSum = doorSum;
-        }
-
-        public int getDoorUsingSum() {
-            return doorUsingSum;
-        }
-
-        public void setDoorUsingSum(int doorUsingSum) {
-            this.doorUsingSum = doorUsingSum;
-        }
-
-        @Override
-        public String toString() {
-            return "DataBean{" +
-                    "deliveryNo=" + deliveryNo +
-                    ", deliverySchool='" + deliverySchool + '\'' +
-                    ", deliveryRegion='" + deliveryRegion + '\'' +
-                    ", deliveryModel=" + deliveryModel +
-                    ", deliveryStatus=" + deliveryStatus +
-                    ", createTime='" + createTime + '\'' +
-                    ", updateTime='" + updateTime + '\'' +
-                    ", deliveryPassword='" + deliveryPassword + '\'' +
-                    ", maintainer='" + maintainer + '\'' +
-                    ", maintainerPhone='" + maintainerPhone + '\'' +
-                    ", doorSum=" + doorSum +
-                    ", doorUsingSum=" + doorUsingSum +
-                    '}';
-        }
-    }
-
-    @Override
-    public String toString() {
-        return "AdminQueryBean{" +
-                "code=" + code +
-                ", msg='" + msg + '\'' +
-                ", data=" + data +
-                '}';
     }
 }

@@ -53,13 +53,13 @@ public class SyncFail extends JFrame {
 
         jButton1.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/again.png"))); // NOI18N
         jButton1.addActionListener(evt -> {
-            new InitSuccess().setVisible(true);
+            new InitSuccess(null).setVisible(true);
             this.dispose();
         });
 
         jButton2.setIcon(new ImageIcon(getClass().getResource("/com/thai/intelliexpcab/resources/cancel.png"))); // NOI18N
         jButton2.addActionListener(evt -> {
-            new InitSuccess().setVisible(true);
+            new InitSuccess(null).setVisible(true);
             this.dispose();
         });
 
